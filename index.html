@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Log Viewer</h1>
+
+    <!-- Form for selecting ACs -->
+    <form id="acForm">
+        <label for="acSelect">Select AC(s):</label>
+        <select id="acSelect" multiple>
+            <option value="AC1">AC1</option>
+            <option value="AC2">AC2</option>
+        </select>
+        <button type="submit">Load Logs</button>
+    </form>
+
+    <!-- Summary Display -->
+    <div id="summary">
+        <p>Total Logs: <span id="totalLogs">0</span></p>
+        <p>Total Errors: <span id="totalErrors">0</span></p>
+        <p>Total Warnings: <span id="totalWarnings">0</span></p>
+    </div>
+
+    <!-- Table for displaying logs -->
+    <table id="logTable">
+        <thead>
+            <tr>
+                <th>Log Data</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
